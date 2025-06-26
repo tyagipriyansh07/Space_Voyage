@@ -44,16 +44,14 @@ Welcome to the Cosmic Dashboard! This is a full-stack web application built for 
 
 - Node.js and npm (or yarn) installed.
 - A NASA API Key, which you can get for free from [api.nasa.gov](https://api.nasa.gov/).
-
-### 1. Clone the Repository
-
 ```bash
+
+#### 1. Clone the Repository
+
 git clone https://github.com/[YourUsername]/cosmic-dashboard.git
 cd cosmic-dashboard
-Use code with caution.
-Markdown
-2. Backend Setup
-Generated bash
+
+#### 2. Backend Setup
 # Navigate to the backend directory
 cd backend
 
@@ -61,18 +59,25 @@ cd backend
 npm install
 
 # Create a .env file in the backend directory
-# (You can copy the .env.example if one exists)
 touch .env
 
 # Add your NASA API key to the .env file
 echo "NASA_API_KEY=YOUR_NASA_API_KEY_HERE" >> .env
 echo "PORT=5000" >> .env
-Use code with caution.
-Bash
-3. Frontend Setup
-Generated bash
+
+#### 3. Frontend Setup
 # Navigate to the frontend directory from the root
 cd ../frontend
 
 # Install dependencies
 npm install
+
+# Start the frontend development server
+npm start
+
+#### 4. Run the Application
+Open two terminal windows:
+In one, run the backend (cd backend && npm start).
+In the other, run the frontend (cd frontend && npm start).
+Access the app at http://localhost:3000 in your browser.
+If you encounter errors, check the terminal for messages and ensure the NASA API key is valid.
