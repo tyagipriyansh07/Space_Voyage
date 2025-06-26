@@ -36,9 +36,9 @@ const MarsRoverPage = () => {
         <input type="number" name="sol" placeholder="Enter Sol (e.g., 1000)" />
         <button type="submit">Search</button>
       </form>
-      <div className="image-grid">
+      <div className="mars-rover-container">
         {photos.map((photo) => (
-          <div key={photo.id} className="image-card">
+          <div key={photo.id} className="mars-rover-card">
             <img src={photo.img_src} alt={`Mars Rover ${photo.id}`} />
             <h3>Camera: {photo.camera.full_name}</h3>
             <p>Date: {photo.earth_date}</p>

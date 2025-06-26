@@ -39,15 +39,24 @@ const NEOsPage = () => {
         <input type="date" name="endDate" placeholder="End Date" />
         <button type="submit">Filter</button>
       </form>
-      <div className="neo-list">
-        {neos.map((neo) => (
-          <div key={neo.id} className="neo-card">
-            <h3>{neo.name}</h3>
-            <p>Close Approach: {neo.close_approach_data[0]?.close_approach_date}</p>
-            <p>Estimated Diameter: {neo.estimated_diameter.kilometers.estimated_diameter_max} km</p>
-          </div>
-        ))}
-      </div>
+      <table className="neo-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Close Approach Date</th>
+            <th>Estimated Diameter (km)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {neos.map((neo) => (
+            <tr key={neo.id}>
+              <td>{neo.name}</td>
+              <td>{neo.close_approach_data[0]?.close_approach_date}</td>
+              <td>{neo.estimated_diameter.kilometers.estimated_diameter_max}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };

@@ -25,16 +25,17 @@ const EPICPage = () => {
 
   return (
     <div className="container">
-      <h1>Earth from Space</h1>
-      <div className="image-grid">
+      <div className="epic-container">
+        <h1>Earth from Space</h1>
         {images.map((item) => (
-          <div key={item.identifier} className="image-card">
+          <div key={item.identifier}>
             <img
               src={`https://epic.gsfc.nasa.gov/archive/natural/${item.date.split(' ')[0].replace(/-/g, '/')}/png/${item.image}.png`}
               alt={item.caption}
+              className="epic-image"
             />
-            <h3>{item.caption}</h3>
-            <p>{item.date}</p>
+            <h3 className="epic-caption">{item.caption}</h3>
+            <p className="epic-date">{item.date}</p>
           </div>
         ))}
       </div>

@@ -1,0 +1,13 @@
+# Node.js
+node_modules/
+dist/
+build/
+
+# Environment variables
+.env
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

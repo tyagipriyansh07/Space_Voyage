@@ -1,4 +1,4 @@
 module.exports = {
-  NASA_API_KEY: '', // Replace with your NASA API key
+  NASA_API_KEY: 'Axv5VSMIfWqk5O52VxSSwM3VoK3JnEHg1yMbLDmV', // Replace with your NASA API key
 };
 

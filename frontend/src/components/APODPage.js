@@ -25,14 +25,20 @@ const APODPage = () => {
 
   return (
     <div className="container">
-      <h1>Astronomy Picture of the Day</h1>
-      <h2>{apod.title}</h2>
-      {apod.media_type === 'image' ? (
-        <img src={apod.url} alt={apod.title} className="apod-image" />
-      ) : (
-        <iframe title="APOD Video" src={apod.url} frameBorder="0" allowFullScreen className="apod-video"></iframe>
-      )}
-      <p>{apod.explanation}</p>
+      <div className="apod-container">
+        <h1>Astronomy Picture of the Day</h1>
+        {apod && (
+          <>
+            <h2 className="apod-title">{apod.title}</h2>
+            {apod.media_type === 'image' ? (
+              <img src={apod.url} alt={apod.title} className="apod-image" />
+            ) : (
+              <iframe title="APOD Video" src={apod.url} frameBorder="0" allowFullScreen className="apod-video"></iframe>
+            )}
+            <p className="apod-explanation">{apod.explanation}</p>
+          </>
+        )}
+      </div>
     </div>
   );
 };

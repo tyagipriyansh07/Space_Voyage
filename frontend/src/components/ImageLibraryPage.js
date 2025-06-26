@@ -36,9 +36,9 @@ const ImageLibraryPage = () => {
         <input type="text" name="search" placeholder="Search images..." />
         <button type="submit">Search</button>
       </form>
-      <div className="image-grid">
+      <div className="gallery">
         {images.map((item) => (
-          <div key={item.data[0].nasa_id} className="image-card">
+          <div key={item.data[0].nasa_id} className="gallery-item">
             <img src={item.links[0].href} alt={item.data[0].title} />
             <h3>{item.data[0].title}</h3>
           </div>
