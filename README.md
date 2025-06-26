@@ -2,13 +2,13 @@
 
 Welcome to the Cosmic Dashboard! This is a full-stack web application built for the Bounce Insights Software Engineer coding challenge. It utilizes several NASA Open APIs to present a real-time, multi-faceted view of space-related events and data in a visually engaging dashboard format.
 
-**Live Demo:** [Link to your deployed application on Vercel/Render]
-**GitHub Repo:** [Link to your GitHub repository]
+**Live Demo:** [https://your-deployed-app.vercel.app]  
+**GitHub Repo:** [https://github.com/your-username/cosmic-dashboard]
 
 ## Features
 
 - **Astronomy Picture of the Day (APOD):** See the inspirational space picture or video of the day, complete with its title and description.
-- **Near-Earth Object (NEO) Tracker:** Get a list of asteroids and comets making their closest approach to Earth *today*, including their estimated size and miss distance.
+- **Near-Earth Object (NEO) Tracker:** Get a list of asteroids and comets making their closest approach to Earth today, including their estimated size and miss distance.
 - **Live Earth View:** View the most recent full-disc image of Earth captured by the EPIC camera aboard the DSCOVR satellite.
 - **Mars Rover Latest Photos:** Browse a gallery of the most recent images sent back from the Perseverance rover on Mars.
 - **Robust Backend:** An Express.js server acts as a secure intermediary, handling API keys and fetching data from NASA's endpoints.
