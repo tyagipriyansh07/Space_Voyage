@@ -1,4 +1,4 @@
-# Cosmic Dashboard - A NASA API Data Explorer
+# NASA Data Explorer – The Cosmic Dashboard Experience
 
 Welcome to the Cosmic Dashboard! This is a full-stack web application built for the Bounce Insights Software Engineer coding challenge. It utilizes several NASA Open APIs to present a real-time, multi-faceted view of space-related events and data in a visually engaging dashboard format.
 
