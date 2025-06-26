@@ -73,15 +73,6 @@ body {
   position: relative;
   z-index: 2;
 }
-.homepage {
-  height: 100vh;
-  overflow-y: scroll;
-  scrollbar-width: none; /* Firefox */
-}
-
-.homepage::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
-}
 
 
 .homepage h1 {

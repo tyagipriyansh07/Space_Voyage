@@ -25,11 +25,6 @@ const HomePage = () => {
         setError('Failed to load data from NASA APIs');
         setLoading(false);
       }
-       document.body.style.overflow = 'hidden';
-  return () => {
-    // Reset when leaving homepage
-    document.body.style.overflow = 'auto';
-  };
     };
     fetchData();
   }, []);
